@@ -1,11 +1,11 @@
-var webpack = require('webpack');
-var path = require('path');
+const webpack = require('webpack');
+const path = require('path');
 const AutoDllPlugin = require('autodll-webpack-plugin');
 
-var BUILD_DIR = path.resolve(__dirname, './public/libs');
-var APP_DIR = path.resolve(__dirname, './frontend');
+const BUILD_DIR = path.resolve(__dirname, './public/libs');
+const APP_DIR = path.resolve(__dirname, './frontend');
 
-var config = {
+const config = {
   entry: {
     administrator : APP_DIR + '/administrator/index.jsx',
     user : APP_DIR + '/user/index.jsx',
@@ -17,7 +17,7 @@ var config = {
   },
   cache: true,
   module : {
-    loaders : [
+    rules : [
       {
         test : /\.jsx?/,
         include : APP_DIR,
