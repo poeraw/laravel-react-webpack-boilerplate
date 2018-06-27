@@ -10,6 +10,6 @@
         <div id="app">
         </div>
         <script src="./libs/vendor.lib.js"></script>
-        <script src="./libs/user.lib.js"></script>
+        <script src="./libs/guest.lib.js"></script>
     </body>
 </html>
