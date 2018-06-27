@@ -5,7 +5,7 @@ import axiosMiddleware from 'redux-axios-middleware';
 import thunk from 'redux-thunk';
 
 const client = axios.create({
-  baseURL: 'http://marketplace.local/api',
+  baseURL: 'http://development.local/api',
   responseType: 'json'    
 });
 

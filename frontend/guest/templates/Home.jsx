@@ -15,6 +15,7 @@ class HomeTemplate extends React.Component {
         e.preventDefault()
         console.log('requesting')
         this.props.eActions.loadRequest().then(() => {
+            // promise
             console.log('save')
         });
     }
@@ -22,10 +23,9 @@ class HomeTemplate extends React.Component {
     render(){
 
         return(
-            <div>My Home
-                <Link to="/login">A</Link>
-                <p onClick={ this.request.bind(this) }>Click</p>
-                <p onClick={ this.props.eActions.successRequest }>Click 2</p>
+            <div>
+                <b>My Home</b> | <Link to="/login">Login</Link> | <Link to="/register">Register</Link><br />
+                <button onClick={ this.request.bind(this) }>Test Click : Axios Middleware - Open developer console for response</button>
             </div>
         );
 

@@ -11,7 +11,9 @@ class LoginTemplate extends React.Component {
     render(){
 
         return(
-            <div>My Home</div>
+            <div>
+                <Link to='/'>Back to My Home</Link>
+            </div>
         );
 
     }
