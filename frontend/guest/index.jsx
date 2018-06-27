@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import store from './redux/store.js';
+import store from './redux/store';
 
 
 import {
@@ -12,6 +12,8 @@ import {
 } from 'react-router-dom';
 
 import HomeTemplate from './templates/Home.jsx';
+import LoginTemplate from './templates/Login.jsx';
+import RegisterTemplate from './templates/Register.jsx';
 
 class App extends React.Component {
 
@@ -26,8 +28,8 @@ class App extends React.Component {
                     <Router>
                         <Switch>
                             <Route exact path="/" component={ HomeTemplate }/>
-                            <Route path="/login"/>
-                            <Route path="/register"/>
+                            <Route path="/login" component={ LoginTemplate }/>
+                            <Route path="/register" component={ RegisterTemplate }/>
                             <Route path="/tos"/>
                         </Switch>
                     </Router>

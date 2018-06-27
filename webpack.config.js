@@ -8,7 +8,8 @@ var APP_DIR = path.resolve(__dirname, './frontend');
 var config = {
   entry: {
     administrator : APP_DIR + '/administrator/index.jsx',
-    user : APP_DIR + '/user/index.jsx'
+    user : APP_DIR + '/user/index.jsx',
+    guest : APP_DIR + '/guest/index.jsx'
   },
   output: {
     path: BUILD_DIR,

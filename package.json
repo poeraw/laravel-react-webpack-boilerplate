@@ -6,6 +6,7 @@
     "dotenv": "^5.0.0",
     "promise": "^8.0.1",
     "reactstrap": "^5.0.0-beta",
+    "redux-axios-middleware": "^4.0.0",
     "validator": "^9.4.0"
   },
   "devDependencies": {
