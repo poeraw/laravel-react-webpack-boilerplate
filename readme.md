@@ -1,10 +1,12 @@
 ## Requirement
 - Webpack
+- Composer
 - NPM
-- Bower ( Optional )
+- Bower (Optional)
 
 ## Quickstart
-- Install all dependencies
+- Install all dependencies using composer and npm
+- Generate laravel's application key
 - Run webpack --watch via commandline
 - Your react files is in /frontend folder
 
